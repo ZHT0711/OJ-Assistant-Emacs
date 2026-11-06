@@ -1,0 +1,31 @@
+{
+  "name": "oj-assistant-emacs",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Native Emacs online-judge workspace with problem import, sample tests and account submissions",
+  "license": "MIT",
+  "author": "ZHT0711",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZHT0711/OJ-Assistant-Emacs.git"
+  },
+  "scripts": {
+    "test:backend": "node --test test/bridge.test.cjs",
+    "test:emacs": "emacs -Q --batch -L . -l test/oj-assistant-tests.el -f ert-run-tests-batch-and-exit",
+    "test": "npm run test:backend && npm run test:emacs",
+    "check:elisp": "emacs -Q --batch -L . -f batch-byte-compile oj-assistant.el"
+  },
+  "dependencies": {
+    "typescript": "4.1.5",
+    "axios": "0.21.1",
+    "@3846masa/axios-cookiejar-support": "1.0.1",
+    "cheerio": "1.0.0-rc.5",
+    "katex": "0.12.0",
+    "qs": "6.9.6",
+    "tough-cookie": "4.0.0",
+    "puppeteer-core": "25.13.0"
+  }
+}
