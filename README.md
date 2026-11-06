@@ -19,18 +19,18 @@ Emacs Lisp 原生界面 · 题面侧窗 · 七语言本地测试 · 多平台账
 
 从题库打开一道题，左侧编写解答，右侧阅读题目描述、输入输出格式和样例。题面上的按钮可以直接运行样例、编辑测试和提交。
 
-![Emacs 中并排显示 C++ 解答和中文题面](docs/images/workspace.png)
+![Emacs 中并排显示 C++ 解答和中文题面](docs/images/workspace.jpg)
 
 ### 样例与自定义测试
 
 保存代码后异步编译、逐个运行测试，结果窗口列出输入、预期输出、实际输出、标准错误和耗时。
 
-![实际编译运行 C++ 样例后的测试结果](docs/images/tests.png)
+![实际编译运行 C++ 样例后的测试结果](docs/images/tests.jpg)
 
 <details>
 <summary>查看原生题库界面</summary>
 
-![可搜索、排序和用键盘操作的原生题库](docs/images/library.png)
+![可搜索、排序和用键盘操作的原生题库](docs/images/library.jpg)
 
 </details>
 
